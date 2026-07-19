@@ -171,8 +171,17 @@ if app_mode == "Scanner Mode 📷":
                 class_name = labels[index]
                 confidence_score = prediction[0][index]
                 
+                # Check if the AI thinks there is no food in the picture
+                if class_name == "Background":
+                    with results_placeholder.container():
+                        st.markdown(f"""
+                        <div class="metric-card">
+                            <h3>Looking for food... 👀</h3>
+                            <p style="color: gray;">I don't see any food in this picture!<br>Confidence: {confidence_score*100:.0f}%</p>
+                        </div>
+                        """, unsafe_allow_html=True)
                 # Update results dynamically if confidence is high and it's a known food
-                if confidence_score > 0.40 and class_name in FOOD_DATA and class_name != "Background":
+                elif confidence_score > 0.40 and class_name in FOOD_DATA:
                     stats = FOOD_DATA[class_name]
                     
                     # Determine Eco Score color class
