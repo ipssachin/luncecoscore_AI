@@ -1,0 +1,16 @@
+# Python Virtual Environments
+venv/
+env/
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Agent state
+.agents/
+
+# Temporary data
+food_data.json
