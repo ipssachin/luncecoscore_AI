@@ -57,7 +57,16 @@ def load_food_data():
             "Burger": {"water_l": 2400, "carbon_kg": 2.50, "eco_score": 20},
             "Banana": {"water_l": 160, "carbon_kg": 0.11, "eco_score": 85},
             "Pizza": {"water_l": 1200, "carbon_kg": 1.50, "eco_score": 40},
+            "pizza": {"water_l": 1200, "carbon_kg": 1.50, "eco_score": 40},
             "Salad": {"water_l": 150, "carbon_kg": 0.20, "eco_score": 90},
+            "Fries": {"water_l": 300, "carbon_kg": 0.50, "eco_score": 50},
+            "Sandwich": {"water_l": 500, "carbon_kg": 1.00, "eco_score": 60},
+            "Egg": {"water_l": 200, "carbon_kg": 0.30, "eco_score": 80},
+            "Pepsi": {"water_l": 150, "carbon_kg": 0.40, "eco_score": 20},
+            "Water": {"water_l": 1, "carbon_kg": 0.01, "eco_score": 100},
+            "Dal": {"water_l": 400, "carbon_kg": 0.20, "eco_score": 90},
+            "Rice": {"water_l": 2500, "carbon_kg": 1.20, "eco_score": 30},
+            "Milk": {"water_l": 1000, "carbon_kg": 1.40, "eco_score": 40},
             "Background": {"water_l": 0, "carbon_kg": 0.00, "eco_score": 0}
         }
         with open(DATA_FILE, "w") as f:
