@@ -1,0 +1,13 @@
+0 Apple
+1 Salad
+2 Banana
+3 Fries
+4 Burger
+5 pizza
+6 Sandwich
+7 Egg
+8 Pepsi
+9 Water
+10 Dal
+11 Rice
+12 Milk
